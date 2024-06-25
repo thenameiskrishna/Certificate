@@ -1,0 +1,210 @@
+body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .certificate {
+            width: 978px;
+            height: 710px;
+            padding: 20px;
+            background: url('Background2.png') no-repeat center/cover;
+            border: 7px solid #010910;
+            position: relative;
+            box-sizing: border-box;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 5px rgba(0, 0, 0, 0.05);
+        }
+        .certificate .gold-seal {
+            position: absolute;
+            top: 10px;
+            left: -10px;
+            width: 200px;
+            height: 200px;
+            background: url('logo1.png') no-repeat center/cover;
+        }
+        .certificate .logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            background: url('logoBBN.png') no-repeat center/cover;
+        }
+        .certificate .header,
+        .certificate .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .certificate .header {
+            margin-top: 40px;
+            flex-direction: column;
+        }
+        .certificate h1 {
+            font-size: 60px;
+            color: #000;
+            margin: 0;
+            text-align: center;
+        }
+        .certificate h2 {
+            font-size: 30px;
+            color: #020c15;
+            margin: 0;
+            text-align: center;
+        }
+        .certificate h3 {
+            font-size: 45px;
+            color: #00a4e8;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .certificate .content {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .certificate .content h3 {
+            font-size: 40px;
+            color: #00a3cc;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+        }
+        .certificate .content p {
+            font-size: 25px;
+            color: #000;
+            margin: 5px 0;
+            text-align: center;
+        }
+        .certificate .content .horizontal-line {
+            width: 75%;
+            height: 5px;
+            background-color: #00a3cc;
+            margin: 20px auto;
+        }
+        .certificate .footer {
+            position: absolute;
+            bottom: 20px;
+            width: calc(100% - 50px);
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .footer div {
+            text-align: center;
+            width: 45%;
+            position: relative;
+        }
+        .footer div p {
+            margin: 5px 0;
+        }
+        .footer .line {
+            width: 70%;
+            height: 3px;
+            background-color: #00a3cc;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .frame {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 978px;
+            height: 710px;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+        .frame::before, .frame::after {
+            content: '';
+            position: absolute;
+            border: 20px solid #00a4e8;
+        }
+        .frame::before {
+            width: 0;
+            height: 0;
+        }
+        .frame::after {
+            width: 0;
+            height: 0;
+        }
+        /* Top-left */
+        .frame .top-left::before, .frame .top-left::after {
+            content: '';
+            position: absolute;
+        }
+        .frame .top-left::before {
+            top: -30px;
+            left: -30px;
+            width: 30px;
+            height: 100px;
+            background-color: #00a4e8;
+        }
+        .frame .top-left::after {
+            top: -30px;
+            left: -30px;
+            width: 100px;
+            height: 30px;
+            background-color: #00a4e8;
+        }
+        /* Top-right */
+        .frame .top-right::before, .frame .top-right::after {
+            content: '';
+            position: absolute;
+        }
+        .frame .top-right::before {
+            top: -30px;
+            right: -30px;
+            width: 100px;
+            height: 30px;
+            background-color: #00a4e8;
+        }
+        .frame .top-right::after {
+            top: -30px;
+            right: -30px;
+            width: 30px;
+            height: 100px;
+            background-color: #00a4e8;
+        }
+        /* Bottom-left */
+        .frame .bottom-left::before, .frame .bottom-left::after {
+            content: '';
+            position: absolute;
+        }
+        .frame .bottom-left::before {
+            bottom: -30px;
+            left: -30px;
+            width: 30px;
+            height: 100px;
+            background-color: #00a4e8;
+        }
+        .frame .bottom-left::after {
+            bottom: -30px;
+            left: -30px;
+            width: 100px;
+            height: 30px;
+            background-color: #00a4e8;
+        }
+        /* Bottom-right */
+        .frame .bottom-right::before, .frame .bottom-right::after {
+            content: '';
+            position: absolute;
+        }
+        .frame .bottom-right::before {
+            bottom: -30px;
+            right: -30px;
+            width: 100px;
+            height: 30px;
+            background-color: #00a4e8;
+        }
+        .frame .bottom-right::after {
+            bottom: -30px;
+            right: -30px;
+            width: 30px;
+            height: 100px;
+            background-color: #00a4e8;
+        }
